@@ -1,0 +1,17 @@
+{
+    "pageformat":           "A4",
+    "storageroot":          null,
+    
+    "server": {
+        "port":             8888,
+        "route":            "/",
+        "loglevel":         "warn",
+
+        "logfilelevel":     "info",
+        "logfile":          "/var/log/chromatic.log",
+
+        "restify": {
+            "name":         "chromatic"
+        }
+    }
+}

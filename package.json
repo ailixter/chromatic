@@ -1,0 +1,26 @@
+{
+  "name": "chromatic",
+  "version": "0.0.1",
+  "keywords": [
+    "server",
+    "client",
+    "browser",
+    "puppeteer",
+    "chromium",
+    "pdf"
+  ],
+  "author": "AII (Alexey Ilyin)",
+  "contributors": [],
+  "dependencies": {
+    "config": "^1.30.0",
+    "needle": "2.1.2",
+    "puppeteer": "^1.3.0",
+    "restify": "^6.4.0",
+    "tmp": "0.0.33"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "inspect": "node --inspect=9222 main.js",
+    "inspect-brk": "node --inspect-brk=9222 main.js"
+  }
+}
