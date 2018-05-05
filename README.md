@@ -1,0 +1,2 @@
+# chromatic
+Chromium automation server
