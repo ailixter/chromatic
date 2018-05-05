@@ -24,7 +24,7 @@
     "inspect-brk": "node --inspect-brk=9222 main.js"
   },
   "description": "Chromium automation server",
-  "main": "main.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ailixter/chromatic.git"
