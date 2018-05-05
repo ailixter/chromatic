@@ -1,5 +1,5 @@
 {
-  "name": "chromatic",
+  "name": "@a4web/chromatic",
   "version": "0.0.1",
   "keywords": [
     "server",
@@ -22,5 +22,16 @@
     "start": "node main.js",
     "inspect": "node --inspect=9222 main.js",
     "inspect-brk": "node --inspect-brk=9222 main.js"
-  }
+  },
+  "description": "Chromium automation server",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ailixter/chromatic.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ailixter/chromatic/issues"
+  },
+  "homepage": "https://github.com/ailixter/chromatic#readme"
 }
