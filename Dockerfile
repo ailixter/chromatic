@@ -52,17 +52,17 @@ wget -q https://github.com/Yelp/dumb-init/releases/download/v1.2.1/dumb-init_1.2
 dpkg -i dumb-init_*.deb && rm -f dumb-init_*.deb && \
 apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
-run     mkdir -p /opt/chromatic/config
-workdir          /opt/chromatic
+RUN     mkdir -p /opt/chromatic/config
+WORKDIR          /opt/chromatic
 
-copy    config/default.json ./config/
-copy    main.js             .
-copy    index.js            .
-copy    package.json        .
+COPY    config/default.json ./config/
+COPY    main.js             .
+COPY    index.js            .
+COPY    package.json        .
 
-run     npm install
+RUN     npm install
 
 ENTRYPOINT ["dumb-init", "--"]
 CMD        ["node", "main.js"]
 
-expose  8888
+EXPOSE  8888

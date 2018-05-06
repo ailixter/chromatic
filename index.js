@@ -80,7 +80,6 @@ module.exports = {
 
 function handle (fn = respond) {
     return function (request, response, next) {
-        //DEBUG:throw new errors.NotImplementedError('bad break');
         try {
             return fn(request, response, next);
         }
@@ -137,7 +136,6 @@ function notify (outputurl, data, options = {}) {
     if (!needle) {
         needle = require('needle');
     }
-    //DEBUG:throw new errors.NotImplementedError('break before notification');
     needle('post', outputurl, data, options)
         .then(response => {
             server.log[response.statusCode === 200 ? 'info' : 'error']({client_res: response}, 'callback response');
@@ -149,7 +147,6 @@ function notify (outputurl, data, options = {}) {
 }
 
 function respond (request, response, next) {
-    //DEBUG:throw new errors.NotImplementedError('break response');
     var params = request.params;
     console.log(params);
     if (!['html', 'url'].includes(params.datatype)) {
